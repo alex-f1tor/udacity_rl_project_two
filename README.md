@@ -29,16 +29,18 @@ The following python3 libraries are required:
 
 ## Actor & Critic Networks
 
-To solve the problem multilayer (2 hidden layers) dense neural networks were trained:
-
-* Actor Networks: *input* - state vector, *hidden* - two layers 80 neurons, *output* - action 4d vector;
-* Critic Network: *input* - state & action vectors, *hidden* - two layers 24 & 48 neuron, *output* - advantage scalar value.
-
 As part of the project, the task was solved using the following algorithms:
 
-* DDPG - Deep Deterministic Policy Gradient [notebook](https://github.com/alex-f1tor/udacity_rl_project_two/blob/master/DDPG/Continuous_Control.ipynb)
+* **DDPG** - Deep Deterministic Policy Gradient [notebook](https://github.com/alex-f1tor/udacity_rl_project_two/blob/master/DDPG/Continuous_Control.ipynb)
 
-* PPO - Proximal Policy Optimization [notebook](https://github.com/alex-f1tor/udacity_rl_project_two/blob/master/PPO/Continuous_Control.ipynb)
+* Actor Networks: *input* - state vector, *hidden* - two dense layers 80 neurons, *output* - action vector;
+* Critic Network: *input* - state & action vectors, *hidden* - two dense layers 24 & 48 neurons, *output* - advantage scalar value.
+
+
+* **PPO** - Proximal Policy Optimization [notebook](https://github.com/alex-f1tor/udacity_rl_project_two/blob/master/PPO/Continuous_Control.ipynb)
+
+* Actor Networks: *input* - state vector, *hidden* - two dense layers 128 neurons, *output* - action vector;
+* Critic Network: *input* - state vector, *hidden* - one dense layer 128 neurons, *output* - advantage scalar value.
 
 
 ## Results
